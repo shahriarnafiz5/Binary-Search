@@ -12,14 +12,11 @@ int main()
     {
         int mid = (l+r)/2;
         if(vec[mid]<num)l=mid+1;
-        else if(vec[mid]>num)r=mid-1;
-        else
-        {
-            cout<<mid<<endl;
-            return 0;
-        }
+        else r=mid-1;
     }
- cout<<-1<<endl;
+
+    cout<<l<<endl;//If the target value actually exist
+                //Then it must be in side the l(left)
 
 
 }
