@@ -2,25 +2,21 @@
 using namespace std;
 int main(){
 
-    vector<int> vec = {};
+    vector<int> vec = {1,2,3,4,5,5,5,6,7,9,9,9,9,9,9,9,9,9,10};
     int n = vec.size();
     int l=0;
-    int r = n-1;
+    int r = n;
     int num;
     cin>>num;
-    int ans = -1;
 
-    while(l<=r){
+
+    while(l<r){
         int mid = (l+r)/2;
         if(vec[mid]<num) l = mid+1;
-        else if(vec[mid]>=num){
-            r = mid-1;
-            ans = mid;
-        }
+        else r = mid;
     }
 
-    if(ans==-1)cout<<n<<endl;
-    else cout<<ans<<endl;
+    cout<<l<<endl;
 
 
 }
