@@ -1,6 +1,8 @@
 #include<bits/stdc++.h>
 using namespace std;
 
+//Given an array that first decreases and then increases, find the index of the last element that is smaller than the first element.
+//increasing parts first element must be greater than the first element of the array.
 vector<int>vec = {8,7,6,5,4,3,2,1,9,10,11,12,13,14,15,16,17,18,19,20};
 bool isOk(int x){
 if(vec[0]>vec[x])return true;
