@@ -16,7 +16,7 @@ int main()
 
     }
 
-    cout<<l<<" "<<r<<endl;
+
     if(l>0 && vec[l-1]==num)cout<<l-1<<endl;
     else cout<<-1<<endl;
 
