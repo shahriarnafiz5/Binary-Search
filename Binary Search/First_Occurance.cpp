@@ -17,7 +17,8 @@ int main()
         else r = mid;
 
     }
-    cout<<l<<endl;
+    if(l<n && vec[l]==num)cout<<l<<endl;
+    else cout<<-1<<endl;
 
 
 
