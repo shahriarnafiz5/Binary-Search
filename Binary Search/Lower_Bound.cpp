@@ -16,7 +16,7 @@ int main(){
         else r = mid;
     }
 
-    cout<<l<<endl;
+    cout<<l<<endl;//l->is the lower bound it self
 
 
 }
